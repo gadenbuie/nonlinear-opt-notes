@@ -116,6 +116,8 @@ $endif$
 % Modify definition lists
 \usepackage{enumitem}
 \setlist[description]{style=nextline, leftmargin=5em}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % \let\origdescription\description
 % \renewenvironment{description}{
