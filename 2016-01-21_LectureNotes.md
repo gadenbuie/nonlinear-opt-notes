@@ -109,9 +109,9 @@ Let $\alpha \in \mathbb{R}$, then $S_\alpha = \{x \in S \colon f(x) \leq \alpha\
 ![Level sets](images/lec4/4-5.png)
 
 Theorem
-:    If $f$ is convex on $S$, then $S_alpha$ is a convex set for all $\alpha \in \mathbb{R}$.
+:    If $f$ is convex on $S$, then $S_\alpha$ is a convex set for all $\alpha \in \mathbb{R}$.
 
-*Proof*. Let $x_1, x_2 \in S_alpha$ and $\lambda \in [0,1]$. We need to show that $\lambda x_1 + (1 - \lambda)x_2 \in S_alpha$ for all $\alpha \in \mathbb{R}$.
+*Proof*. Let $x_1, x_2 \in S_\alpha$ and $\lambda \in [0,1]$. We need to show that $\lambda x_1 + (1 - \lambda)x_2 \in S_\alpha$ for all $\alpha \in \mathbb{R}$.
 
 We know that
 
