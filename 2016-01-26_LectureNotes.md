@@ -116,7 +116,7 @@ $f$ is **strictly convex** on $S$ if and only if $$f(\lambda \bar x + (1 - \lamb
 
 When $f \colon S \to \mathbb{R}$, and $S \subset \mathbb{R}^n,\; S \neq \emptyset$ is convex.
 
-Then $f$ is convex on $S$ if and only if $\mathrm{epi} S$ is convex.
+Then $f$ is convex on $S$ if and only if $\mathrm{epi} f$ is convex.
 
 ## 3
 
@@ -146,7 +146,7 @@ f(\bar x) &\geq f(\hat x) + \left[\nabla f(\hat x) \right]^T(\bar x - \hat x) \\
 \Rightarrow \left[\nabla(f(\hat x)) - \nabla f(\bar x) \right]^T (\bar x - \hat x) &\geq 0
 \end{aligned}$$
 
-*Proof ($\Leftarrow$).* $\bar x, \hat x \in S$, invoking the [FOMVT](#first-order-mean-value-theorem) tells us that there exists an $\tilde x  = \lambda \bar x + (1 - \lambda) \hat x$ for $\lambda \in (0,1)$ such that $f(\bar x) = f(\hat x) + [\nabla f(\tilde x)]^T (\bar x - \tilde x)$$.
+*Proof ($\Leftarrow$).* $\bar x, \hat x \in S$, invoking the [FOMVT](#first-order-mean-value-theorem) tells us that there exists an $\tilde x  = \lambda \bar x + (1 - \lambda) \hat x$ for $\lambda \in (0,1)$ such that $f(\bar x) = f(\hat x) + [\nabla f(\tilde x)]^T (\bar x - \tilde x)$.
 
 We know that $\tilde x \in S$.
 

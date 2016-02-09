@@ -90,7 +90,7 @@ f(\bar x + \lambda d) &= f(\bar x) + \lambda [\nabla f(\bar x)]^T d + \lambda \V
 Let's consider $d = - \nabla f(\bar x)$, then
 
 $$\begin{aligned}
-[ \nabla f(\bar x)]^T d &= - [\nabla f(\bar x)]^T [\nabla f(\bar x)] \\
+\lbrack \nabla f(\bar x) \rbrack^T d &= - [\nabla f(\bar x)]^T [\nabla f(\bar x)] \\
 &= - \Vert \nabla f(\bar x) \Vert^2 \leq 0
 \end{aligned}$$
 

@@ -8,7 +8,7 @@ author: Garrick Aden-Buie
 
 $$\begin{aligned}
 \text{min}	&&&f(x)	& 	& \\
-\text{s.t}	&&&x \in X		&	& \\
+\text{s.t}	&&&x \in S		&	& \\
 \end{aligned}$$
 
 $\bar x \in S$ is a global minimum $\Leftrightarrow [\nabla f(\bar x)]^T (x - \bar x) \geq 0 \;\forall x \in S$.
@@ -53,7 +53,7 @@ Suppose $S$ is closed, convex and bounded. Then any point in $S$ can be represen
 
 $$\begin{aligned}
 \text{min}	&&&f(x)	& 	& \\
-\text{s.t}	&&&x \in X		&	& \\
+\text{s.t}	&&&x \in S		&	& \\
 \end{aligned}$$
 
 Then there exists a global optimal solution at an extreme point of $S$.
