@@ -46,7 +46,7 @@ From this perspective, then, $\theta(u) = \min \{\text{concave functions}\}$, so
 
 # Convex / Quasiconvex
 
-**Def.** $S \subset \mathbb{R}, S \neq \emptyset$ open, $f \colon S \to \mathbb{R}$, $f \in C^1(S)$.
+**Def.** $S \subset \mathbb{R}^n, S \neq \emptyset$ open, $f \colon S \to \mathbb{R}$, $f \in C^1(S)$.
 
 (1) $f$ is *pseudoconvex* on $S$ if $$[\nabla f(\bar x)]^T (\hat x - \bar x) \geq 0 \;\Rightarrow\; f(\hat x) \geq f(\bar x) \;\forall \hat x, \bar x \in S$$
 
