@@ -102,7 +102,7 @@ $$\begin{aligned}
 \nabla g_1(x) &= \begin{bmatrix} 2(x_1 - 1) \\ x(x_2 - 1) \end{bmatrix} \\
 \nabla g_2(x) &= \begin{bmatrix} 2(x_1 - 1) \\ 2(x_2 + 1) \end{bmatrix} \\
 u_0 \nabla f(\bar x) + u_1 \nabla g_1(\bar x) + u_2 \nabla g_2(\bar x) &=0 \\
-u_0 \begin{bmatrix} 1\\ 0 \end{bmatrix} + u_2 \begin{bmatrix} 0 \\ -2 \end{bmatrix} + u_3 \begin{bmatrix} 0 \\ 2 \end{bmatrix} &= \begin{bmatrix} 0 \\ 0  \end{bmatrix} \\
+u_0 \begin{bmatrix} 1\\ 0 \end{bmatrix} + u_1 \begin{bmatrix} 0 \\ -2 \end{bmatrix} + u_2 \begin{bmatrix} 0 \\ 2 \end{bmatrix} &= \begin{bmatrix} 0 \\ 0  \end{bmatrix} \\
 u_0 = 0, u_1 = u_2 &=1 \\
 \end{aligned}$$
 
