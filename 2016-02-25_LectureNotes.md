@@ -57,7 +57,7 @@ $$\begin{aligned}
 $$\begin{aligned}
 \theta(u) &= \inf_{x \in X} \lbrace -x_1 - x_2 + u(x_1 + 2x_2 - 3) \rbrace \\
 &= \inf_{x \in X} \lbrace (u-1)x_1 + (2u - 1)x_2 - 3u \rbrace \\
-&= \begin{cases} -6 + 6u &\text{if } u \leq \frac 1 2 \\ -3 &\text{if } frac 1 2 \leq u \leq 1 \\ -3u &\text{if} u \geq 1 \end{cases}
+&= \begin{cases} -6 + 6u &\text{if } u \leq \frac 1 2 \\ -3 &\text{if } \frac 1 2 \leq u \leq 1 \\ -3u &\text{if} u \geq 1 \end{cases}
 \end{aligned}$$
 
 Let $\bar u = \frac 1 2$. Then $X(\bar u) = \arg \min_{x \in X} \lbrace f(x) + \bar u g(x) \rbrace$.
@@ -129,12 +129,7 @@ In the above line search if $\lambda, \mu, a, b$ are all highly separated, then 
 
 ![](images/lec13/13-3.png)
 
-Let
-
-$$\begin{aligned}
-\lambda_k &= \frac{a_k + b_k}{2} - \epsilon \\
-\mu_k &= \frac{a_k + b_k}{2} + \epsilon
-\end{aligned}$$
+Let $\lambda_k = \frac{a_k + b_k}{2} - \epsilon$ and $\mu_k = \frac{a_k + b_k}{2} + \epsilon$
 
 Step 0
 :    Choose an interval $[a_1, b_1]$ that contains an optimal solution. Choose $\epsilon > 0, \delta > 0$. Set $k=1$.
@@ -143,18 +138,20 @@ Step 1
 :    Compute $\lambda_k, \mu_k$.
 
 Step 2
-:    If $f(\lambda_k) < f(\mu_k)$ let $$\begin{aligned}a_{k+1} &= a_k \\ b_{k+1} &= \mu_k\end{aligned}$$.
+:    If $f(\lambda_k) < f(\mu_k)$ let $$\begin{aligned}a_{k+1} &= a_k \\ b_{k+1} &= \mu_k\end{aligned}$$
 
     Otherwise, let $$\begin{aligned}a_{k+1} &= \lambda_k \\ b_{k+1} &= b_k\end{aligned}$$
 
 Step 3
-:    If $b_{k+1} - a_{k+1} < \delta$, then stop: $$x^* \tilde = \frac{a_{k+1} + b_{k+1}}{2}$$
+:    If $b_{k+1} - a_{k+1} < \delta$, then stop: $$x^* \approx \frac{a_{k+1} + b_{k+1}}{2}$$
 
     Otherwise, set $k = k+1$ and go to **Step 1**.
 
 Note that we ned $\epsilon < \frac \delta 2$ for this to work.
 But that this algorithm requires a significant number of function evalutions, which will add computation time.
 This leads us to the next algorithm.
+
+\clearpage
 
 ## Golden Section Search
 
