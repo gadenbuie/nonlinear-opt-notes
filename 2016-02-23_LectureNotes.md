@@ -47,9 +47,9 @@ $$\begin{aligned}
 
 $$\begin{aligned}
 L(x,u) &= f(x) + u g(x) \\
-&= x_1^2 + x_2^2 + u (-x_1 - x_2 - 4) \\
+&= x_1^2 + x_2^2 + u (-x_1 - x_2 + 4) \\
 \theta(u,v) &= \inf_{x \in X} \left\{ L(x, u) \right\} \\
-&= \inf_{x \in X} \left\{ x_1^2 + x_2^2 + u (-x_1 - x_2 - 4) \right\} \\
+&= \inf_{x \in X} \left\{ x_1^2 + x_2^2 + u (-x_1 - x_2 + 4) \right\} \\
 &= \inf_{x_1 \geq 0} \left\{x_1^2 - u x_1 \right\} + \inf_{x_2 \geq 0} \left\{ x_2^2 - u x_2 \right\} + 4u
 \end{aligned}$$
 
