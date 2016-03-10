@@ -51,10 +51,12 @@ Note that $\nabla g_i(\bar x) d$ gives the descent direction for $g_i$.
 
 Given, $A \in \mathbb{R}^{m \times n},\; c \in \mathbb{R}^n$, then exactly one of the following is true (I $\Leftrightarrow \neg$ II).
 
-I. $Ax \leq 0,\; c^t x > 0$ for some $x \in \mathbb{R}^n$
+I.  $Ax \leq 0,\; c^t x > 0$ for some $x \in \mathbb{R}^n$
+
     - Inner-product of $Ax$ is less than 0, $c^T x > 0$ implies that $c$ and $x$ have an acute angle.
 
-II. $A^T y = c, \; y \geq 0$ for some $y \in \mathbb{R}^m$
+II.  $A^T y = c, \; y \geq 0$ for some $y \in \mathbb{R}^m$
+
     - $c$ can be represented as a linear combination of the row vectors of $A$, and $y \geq 0$ means that it must be a non-negative linear combination.
 
 ![Illustration of Farkas' Lemma](images/lec10/10-2.png)
@@ -65,9 +67,9 @@ II. $A^T y = c, \; y \geq 0$ for some $y \in \mathbb{R}^m$
 
 Exactly one of the following is true:
 
-I. $Ax < 0$ for some $x \in \mathbb{R}^n$
+I.  $Ax < 0$ for some $x \in \mathbb{R}^n$
 
-II. $A^T y = 0$ for some $y \geq 0, y \neq 0, y \in \mathbb{R}^m$
+II.  $A^T y = 0$ for some $y \geq 0, y \neq 0, y \in \mathbb{R}^m$
 
 ![Illustration of Gordon's Lemma](images/lec10/10-3.png)
 
@@ -101,7 +103,7 @@ $$\begin{aligned}
 - $g_i \colon i \not\in I$ continuous at $\bar x$
 - $f$ differentiable at $\bar x$
 
-If $\bar x$ local min, then $\exists u_0, u_1 \colon i \in I$ such that $$u_0 \nabla f(\bar x) + \sum_{i \in I} u_i \nabla g_i(\bar x) = 0$$ for $u_0, u_1 \colon i \in I \geq 0$ and $(u_0, u_1 \colon i \in I) \neq 0$[^2].
+If $\bar x$ local min, then $\exists u_0, u_i \colon i \in I$ such that $$u_0 \nabla f(\bar x) + \sum_{i \in I} u_i \nabla g_i(\bar x) = 0$$ for $u_0, u_i \colon i \in I \geq 0$ and $(u_0, u_i \colon i \in I) \neq 0$[^2].
 
 [^2]: There are many $u_i$ and at least one of them must be non-zero and they are non-negative.
 
@@ -126,7 +128,7 @@ System I implies that $\exists d \colon Ad < 0$, $\nabla f(\bar x)^T d < 0$ and 
 This means that $\exists d \colon d \in F_0, \exists d \colon d \in G_0$. Then $\exists d \colon d \in F_0 \cap G_0$.
 And then finally, this means that $F_0 \cap G_0 \neq \emptyset$.
 
-System II says that $\Rightarrow y \colon y =\neq 0,\; A^T y = 0$.
+System II says that $\Rightarrow y \colon y \neq 0,\; A^T y = 0$.
 Let $$y = \begin{bmatrix} u_0 \\ u_i \colon i \in I \end{bmatrix}$$
 
 $$\begin{aligned}
