@@ -76,7 +76,7 @@ VI(F, \Omega) \;\text{is to find a vector } y \\
 \langle F(y), x-y \rangle \geq 0 \;\forall x \in \Omega
 \end{aligned}$$
 
-*Definition.* Nonlinear Complimentary Problem
+# Nonlinear Complimentary Problem
 
 $F \colon \mathbb{R}^n \to \mathbb{R}^n$. $NCP(F)$ is to find a vector $y$ such that
 
@@ -89,4 +89,62 @@ y &\geq 0
 Note that this is similar to the KKT conditions, but more general.
 Sometimes these three conditions are written in the following form:
 
-$$ 0 \leq F(y) \perp y \geq 0$
+$$ 0 \leq F(y) \perp y \geq 0$$
+
+# Fixed-Point Problem
+
+- $\Omega in \mathbb{R}^n$ non-empty
+- $F \colon \Omega \to \Omega$
+- $FPP(F, \Omega)$ is to find a vector $y$ such that $y \in \Omega, y = F(y)$.
+- This is related to the notion of equilibrium.
+
+# Minimum Norm Projection
+
+$$\begin{aligned}
+y &= P_\Omega [v] && v \in \mathbb{R}^n, \Omega \subset \mathbb{R}^n &&(v \text{ vector}, \Omega \text{ set}) \\
+&= \arg\min_{x \in \Omega} \Vert v - x \Vert \\
+\Rightarrow y &\in \Omega
+\end{aligned}$$
+
+# Fixed-Point Problem based on Min Norm Projection
+
+An extension of the general form.
+
+- $\Omega \subset \mathbb{R}^n$ non-empty
+- $F \colon \Omega \to \Omega$
+- $FPP_{\min} (F, \Omega)$ is to find a vector $y$ such that $y \in \Omega$ and $y = P_{\Omega} [y - F(y)]$.
+
+Here $P_{\Omega}$ is the projection onto feasible space and $F(y)$ is like the gradient of vector function.
+But FPP implies you stay at some point $\Rightarrow$ optimal solution.
+
+$$y = P_{\Omega} [y - F(y)] \Rightarrow y = \arg\min_{x \in \Omega} \Vert y - F(y) - x \Vert$$
+
+# Connection between VI, NCP, FPP~min~
+
+So far we have been discussing VI, NCP, FPP~min~ and we are going to now show that these three are all related.
+
+Consider the following optimization problem:
+
+$$\left.\begin{aligned}
+\text{min}	&&&f(x)	& 	& \\
+\text{s.t}	&&&x \in X		&	& \\
+&&&f \text{ pseudoconvex} \\
+&&&X \text{ convex}
+\end{aligned} \right\rbrace \Rightarrow \nabla f(x^*)^T (x - x^*) \geq 0 \;\forall x \in X$$
+
+Whenever you have an optimization problem in this situation, you can convert to VI problem.
+
+What is we have VI problem $VI(F, \Omega) \colon F(y)^T (x - y) \geq 0 \;\forall x \in \Omega$?
+We can go from the optimization problem to the VI using gradient.
+Can we go VI $\to$ optimization?
+The following theorem shows this.
+
+# Theorem
+
+Suppose $\Omega \subset \mathbb{R}^n$ and $F \colon \Omega \to \mathbb{R}^n$.
+
+Then $VI(F, \Omega)$ is equivalent to $\min \oint_0^x F(z) dz$ s.t. $x \in \Omega$.
+
+**Note.** $x,z,dz$ are all vectors with dimension $n$, so the integral is a line integral $\oint$.
+
+The theorem holds if $\oint_0^x F(z) dz$ is *single-valued*, where single-valued means that $\oint_0^x F(z) dz = c \;\forall$ paths from $\mathbf{0} \to \mathbf{x}$.
