@@ -3,3 +3,5 @@ images/*/*.pdf
 external/*
 homework/*
 *.swp
+.Rproj.user
+markdown/images

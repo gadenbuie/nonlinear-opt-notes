@@ -151,7 +151,7 @@ This is the general scheme, but our objective is to wisely choose $D_k$.
 We need to check the sign of the gradient to see that it's negative.
 $$\begin{aligned}
 \nabla f(x^k)^T d^k &< 0 \\
-\lambda_k \nabla f(x^k)^T D_k \nabla f(x^k) &, 0
+\lambda_k \nabla f(x^k)^T D_k \nabla f(x^k) &< 0
 \end{aligned}$$
 
 If $D_k$ is PD, then $d^k$ is a descent direction.
