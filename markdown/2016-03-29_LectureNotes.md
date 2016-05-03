@@ -11,7 +11,7 @@ author: Garrick Aden-Buie
 
 
 $$\begin{aligned}
-x^{k+1} &= \lambda_k d^k \\
+x^{k+1} &= x^k + \lambda_k d^k \\
 d^k &= -D_k \nabla f(x^k) \\
 D_{k+1} &= D_k + C_k \\
 \end{aligned}$$

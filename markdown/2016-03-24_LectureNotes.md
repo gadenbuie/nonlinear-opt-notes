@@ -163,7 +163,7 @@ If $D_k$ is PD, then $d^k$ is a descent direction.
 ## Davidon-Fletcher-Powell (DFP) Method
 
 $$\begin{aligned}
-x^{k+1} &= \lambda_k d^k \\
+x^{k+1} &= x^k + \lambda_k d^k \\
 d^k &= -D_k \nabla f(x^k) \\
 D_{k+1} &= D_k + \frac{p^k(p^k)^T}{(p^k)^T q^k} - \frac{D_k q^k (q^k)^T D_k}{(q^k)^T D_k q^k}
 \end{aligned}$$
