@@ -33,7 +33,7 @@ h^* =\arg\min	&&&\sum c_p(h^*)h_p	& 	& \\
             &&&-h_p \leq 0 &&\forall p \in P &&(\rho_p) \\
 \end{aligned}$$
 
-*Remark.* If the VI is $\geq 0$ then it is related to maximization problem; if the VI is $\leq 0$ then it is related to minimization.
+*Remark.* If the VI is $\geq 0$ then it is related to minimization problem; if the VI is $\leq 0$ then it is related to maximization.
 
 Now, we derive the KKT conditions, using the dual variables (in parens above), where we are assuming that $h^*$ is fixed.
 
